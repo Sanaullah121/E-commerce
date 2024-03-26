@@ -1,0 +1,131 @@
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    width: 135px;
+    justify-content: space-between;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .decrement-btn,
+  .increment-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .accordion-button{
+    color: black;
+  }
+
+  .collapse > ul >li >a{
+    color: black;
+    cursor: pointer;
+}
+
+#Navbar.bgcolor {
+    background-color: white;
+    color: #777;
+    border-bottom: 1px solid lightgray;
+    transition: all 0.7s ease;
+
+}
+
+#Navbar.bgcolor a, #Navbar.bgcolor i  {
+    color: #777;
+}
+
+.icons i{
+  color: black;
+}
+
+
+
+.nav-link{
+    position: relative;
+
+
+}
+.dropdown-menu{
+   background-color: rgb(199, 196, 197) ; 
+}
+
+
+.A::after{
+    content: "";
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.A:hover::after{
+ opacity: 1;
+}
+
+.Sec{
+  margin-top: 100px;
+}
+
+
+.to-top{
+  position: fixed;
+  right: 32px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+  background-color: rgb(90, 202, 240);
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-list img {
+  width: 100px; /* Adjust the image size as needed */
+  height: 100px;
+  cursor: pointer;
+}
+
+.display-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#displayed-image {
+  width: 300px; /* Adjust the displayed image size as needed */
+  height: auto;
+}
+

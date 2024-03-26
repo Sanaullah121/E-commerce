@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="product.css">
+    <script src="https://kit.fontawesome.com/510c74bbcd.js"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="mb-5">
+    <nav class="navbar navbar-expand-lg fixed-top " id="Navbar">
+      <div class="container-fluid">
+        <!-- <img class="logo" src="3.PNG" alt=""> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto ms-4 mb-2 mb-lg-0 ">
+            <li class="nav-item ">
+              <a class="nav-link A txt" aria-current="page" href="#"><b>HOME</b></a>
+            </li>
+            <li class="nav-item " id="text">
+              <a class="nav-link A txt" href="#"><b>ABOUT US</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link A txt" href="#"><b>SERVICES</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link A txt" href="#"><b>PORTFOILIO</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link A txt" href="#"><b>CAREARS</b></a>
+            </li>
+            <li class="nav-item dropdown A">
+              <a class="nav-link dropdown-toggle " href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <b>PRODUCT</b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link A"><b>CONTACT</b></a>
+            </li>
+          </ul>
+          <div class="d-flex me-5 icons" role="search">
+            <i class="fa-regular fa-heart fa-lg"></i>
+            <i class="fa-solid fa-cart-shopping fa-lg"
+              style=" margin-left: 20px;"></i>
+            <i class="fa-regular fa-circle-user fa-lg"
+              style=" margin-left: 20px;"></i>
+            <i class="fa-solid fa-magnifying-glass fa-lg"
+              style=" margin-left: 20px;"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+   
+
+    <section class=" Sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active display-container">
+                  <img id="displayed-image" src="giv.jpg" src="" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="black-shirt.jpg"  class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="product-list mt-3">
+              <!-- Your product images go here -->
+              <img src="Beck-Coat-01.jpg" alt="Product 1" onclick="displayImage(this)">
+              <img src="Beck-Coat-04.jpg" alt="Product 2" onclick="displayImage(this)">
+              <img src="bbeauty02.jpg" alt="Product 2" onclick="displayImage(this)">
+              <img src="007b.jpg" alt="Product 2" onclick="displayImage(this)">
+              <!-- Add more product images as needed -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <h1>
+              Products with Multimedia Contents
+            </h1>
+            <h5 class="fw-bolder mt-4">
+              $28.00
+            </h5>
+
+            <p>A go-everywhere coat, cut from a wool blend custom plaid with an
+              oversized fit and drawstring hood.Faux
+              shearling jacket with a contrast detail on the chest, long
+              sleeves, a high neck, zip fastening and an
+              elasticated hem and cuffs.<br>Loose-fitting 3/4 sleeve utility
+              mini dress with shirred detailing at the
+              waist and a front button fastening. Purchase this product on</p>
+            <h4>
+              Qualtity:
+
+            </h4>
+            <div class="quantity-selector mt-3">
+              <button class="decrement-btn">-</button>
+              <input type="number" class="quantity-input" value="1" min="1">
+              <button class="increment-btn">+</button>
+            </div>
+            <div class="mt-4 d-flex flex-row justify-content-center w-100">
+              <button type="button" class="btn btn-light btn-lg"
+                style="width: 800px; border: 1px solid black;"><b>Add To
+                  Cart</b></button>
+            </div>
+
+            <div class="accordion mt-3" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <b>Qualtity</b>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It
+                    is shown by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mt-2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <b>Products</b>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong>
+                    It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mt-2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    <b>Cascade Products</b>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <hr>
+      <footer class="mb-4 mt-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center icons2">
+              <i class="fa-brands fa-facebook-f fa-lg"></i>
+              <i class="fa-brands fa-twitter fa-lg" style=" margin-left: 15px;"></i>
+              <i class="fa-brands fa-pinterest fa-lg" style="margin-left: 15px;"></i>
+              <i class="fa-brands fa-instagram fa-lg" style="margin-left: 15px;"></i>
+              <div class="mt-3">
+                <p><span class="fw-bolder">@GET BOOTIED</span>-Elite ThemeForest
+                  Aurthor</p>
+              </div>
+            </div>
+            <a href="#" class="to-top">
+              <i class="fa-solid fa-angle-up"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+      <script src="product.js"></script>
+      <script src="index.js"></script>
+    </body>
+
+  </html>
